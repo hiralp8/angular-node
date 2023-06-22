@@ -1,0 +1,35 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.list {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-item {
+  list-style-type: none;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.active {
+  color: coral;
+  text-decoration: underline;
+}
+
+.brand {
+  background: black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  color: darkgray;
+  cursor: pointer;
+}
+
+.first-row {
+  box-shadow: 1px 1px;
+}

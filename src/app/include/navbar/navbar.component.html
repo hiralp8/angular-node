@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row class="first-row">
+    <div class="brand">
+      <span>my</span>
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="home"
+        routerLink="/"
+      ></mat-icon>
+    </div>
+
+    <ul class="list">
+      <li class="list-item" routerLinkActive="active" routerLink="/dashboard">
+        Dashboard
+      </li>
+      <li class="list-item" routerLinkActive="active" routerLink="/posts">
+        Posts
+      </li>
+    </ul>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <span>{{currentPage}}</span>
+    <span class="example-spacer"></span>
+    <mat-icon class="example-icon">verified_user</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>

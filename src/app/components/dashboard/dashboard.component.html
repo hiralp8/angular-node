@@ -1,0 +1,17 @@
+<div class="user">
+  <ul class="list">
+    <li class="list-item" *ngFor="let user of userData | sortname: 'first_name'">
+      <div class="user__logo">
+        <img src="{{ user.avatar }}" alt="{{ user.first_name }}" />
+      </div>
+      <div class="user__info">
+        <h4>{{ user.first_name }} {{ user.last_name }}</h4>
+        <p>{{ user.email }}</p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="pagination">
+  <button mat-button color="accent" class="paginate__button" *ngFor="let i of numbers" (click)="onPageClick(i)">{{i}}</button>
+</div>
